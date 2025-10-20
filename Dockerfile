@@ -14,4 +14,4 @@ RUN chmod +x ./gradlew
 RUN ./gradlew build -x test --no-daemon
 
 # Run the JAR
-CMD ["java", "-jar", "build/libs/coffee-shop-telegram-bot-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "build/libs/product-web-api-0.0.1-SNAPSHOT.jar"]
