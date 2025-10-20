@@ -11,8 +11,7 @@ description = 'Demo project for Spring Boot'
 
 java {
 	toolchain {
-		/*languageVersion = JavaLanguageVersion.of(21)*/
-		languageVersion = JavaLanguageVersion.of(JavaVersion.current().majorVersion.toInteger())
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
@@ -38,6 +37,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.13'
+	implementation 'org.postgresql:postgresql:42.7.3'
 }
 
 tasks.named('test') {
